@@ -1,0 +1,357 @@
+$blue: #4a90e2;
+body {
+  font-family: sans-serif;
+}
+
+ul {
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clearfix {
+  &:after {
+    content:'';
+    display: table;
+    clear:both;
+  }
+}
+
+.pull-left { float: left; }
+.pull-right { float: right; }
+
+.bold {
+  font-weight: bold;
+}
+
+.blue {
+  color: $blue;
+}
+
+.main {
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.line {
+  height: 1px;
+  background: $blue;
+  width: 0;
+  transition: all .4s;
+  @media(max-width: 991px) {
+    display: none;
+  }
+}
+
+.main-page {
+  background-image: url(../images/main_bg.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.fassaadid {
+  background-image: url(../images/fassaadid.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.kontakt {
+  background-image: url(../images/kontakt.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+nav {
+  margin-top: 40px;
+
+  ul,
+  li {
+    display: inline-block;
+    @media(max-width: 500px) {
+      display: block;
+      text-align: center;
+    }
+  }
+  
+  .logo {
+    img {
+      @media(max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+  
+  ul {
+    &.white-nav {
+      li {
+        a {
+          color: #fff;
+          .circle {
+            border-color: #fff;
+          }
+          &.active {
+            &:before {
+              background: #fff;
+            }
+            .circle {
+              background: #fff !important;
+            }
+          }
+        }
+      }
+      .dropdown {
+        background: rgba(255,255,255,.5);
+      }
+    }
+  }
+
+  li {
+    &.has-dropdown {
+      position: relative;
+      &:hover {
+        .dropdown {
+          display: block;
+        }
+      }
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      width: 350px;
+      display: none;
+      background: rgba(255,255,255,.9);
+      z-index: 100;
+
+      li {
+        display: block;
+      }
+
+      a {
+        padding: 10px 20px;
+        &.active {
+          &:before {
+            content: none !important;
+          }
+        }
+      }
+    }
+  }
+
+  li a {
+    color: #000;
+    font-weight: bold;
+    display: block;
+    padding: 20px;
+    position: relative;
+    
+    @media(max-width: 991px) {
+      padding: 6px;
+    }
+
+    &:hover {
+      color: #000;
+      text-decoration: none;
+      .circle {
+        background: $blue;
+        border-color: $blue;
+      }
+    }
+
+    &.active {
+      &:before {
+        content: '';
+        position: absolute;
+        left: 23px;
+        top: -40px;
+        height: 68px;
+        width: 1px;
+        background: $blue;
+        @media(max-width: 991px) {
+          content: none;
+        }
+      }
+      .circle {
+        background: $blue;
+        border-color: $blue;
+      }
+    }
+
+    .circle {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: 1px solid silver;
+      background: none;
+      display: inline-block;
+      margin-right: 6px;
+      margin-top: -2px;
+      vertical-align: middle;
+      transition: all .4s;
+    }
+  }
+}
+
+.about-us {
+  h1 {
+    margin-top: 180px;
+    color: red;
+    transform: translateY(-100px);
+    opacity: 0;
+    animation: fadeIn .8s;
+    animation-fill-mode: forwards;
+  }
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.portfolio-cards {
+  .card {
+    border-radius: 4px;
+    
+    &.open {
+      .toggle-info {
+        display: block;
+      }
+      .inner {
+        text-align: left !important;
+        h2, .read-more-btn {
+          visibility: hidden;
+          opacity: 0;
+        }
+      }
+    }
+    .inner {
+      padding: 37px 20px;
+      background-size: cover;
+      min-width: 355px;
+      max-width: 355px;
+      
+      h2, .read-more-btn {
+        visibility: visible;
+        opacity: 1;
+        transition: all .4s;
+      }
+      
+      span {
+        background: #fc4231;
+        color: #fff;
+        padding: 3px 10px;
+        border-radius: 4px;
+        font-size: 11px;
+      }
+  
+      h2 {
+        font-weight: bold;
+        margin-top: 120px;
+        color: #fff;
+      }
+  
+      .read-more-btn {
+        display: inline-block;
+        padding: 10px 16px;
+        border: 1px solid rgba(255, 255, 255, .5);
+        border-radius: 4px;
+        color: #fff;
+        margin-top: 15px;
+        transition: all .4s;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover {
+          background: #fff;
+          color: #000;
+        }
+      }
+      
+      &.balti {
+        background-image: url(../images/baltijaama.png);
+      }
+  
+      &.vanalinn {
+        background-image: url(../images/vanalinn.png);
+      }
+  
+      &.toompea {
+        background-image: url(../images/vanatoompea.png);
+      }
+    }
+    
+    .toggle-info {
+      padding: 24px 50px;
+      background: #fff;
+      display: none;
+      position: relative;
+      max-width: 400px;
+      .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+}
+
+.address {
+  padding: 10px;
+  color: #fff;
+}
+
+.contact-cards {
+  .card {
+    padding: 30px 40px;
+    border-radius: 4px;
+    background: rgba(255,255,255,.8);
+    > img {
+      margin-right: 15px;
+    }
+    
+    h3 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form-inputs {
+  
+  form {
+    margin-top: 50px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    border-radius: 4px;
+    border:none;
+    outline: none;
+    background: rgba(255,255,255,.8);
+  }
+  
+  input[type="text"], input[type="email"], textarea {
+    padding: 7px;
+  }
+  
+  input[type="text"], input[type="email"], {
+    margin-bottom: 25px;
+  }
+}
+
+.clients-block {
+  padding: 25px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

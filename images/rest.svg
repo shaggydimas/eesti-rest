@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="72px" viewBox="0 0 70 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>restauratsioon&amp;fassaaditööd_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 72 69.4938936 72 69.4938936 0 0 0"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="restauratsioon&amp;fassaaditööd_icon">
+            <g id="Page-1">
+                <path d="M25.6823617,17.40825 C25.6823617,24.03525 20.2742766,29.40975 13.5957447,29.40975 C6.92023404,29.40975 1.5106383,25.08225 1.5106383,18.45375 C1.5106383,11.82675 6.92023404,7.50075 13.5957447,7.50075 L55.8966383,7.50075 C62.5736596,7.50075 67.9832553,11.82675 67.9832553,18.45375 C67.9832553,25.08225 62.5736596,29.93175 55.8966383,29.93175 C49.219617,29.93175 43.8115319,24.29925 43.8115319,17.66925" id="Stroke-1" stroke="#4A90E2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-4"></g>
+                <polygon id="Stroke-3" stroke="#4A90E2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="14.9945957 7.5 54.2711915 7.5 54.2711915 1.5 14.9945957 1.5"></polygon>
+                <polygon id="Stroke-5" stroke="#4A90E2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="14.9945957 70.5 54.2711915 70.5 54.2711915 37.5 14.9945957 37.5"></polygon>
+                <polyline id="Stroke-6" stroke="#4A90E2" stroke-width="3" stroke-linejoin="round" mask="url(#mask-2)" points="54.2716447 30 54.2716447 37.5 14.9950489 37.5 14.9950489 30"></polyline>
+                <path d="M27.0801553,39 L27.0801553,69" id="Stroke-7" stroke="#4A90E2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)"></path>
+                <path d="M42.1865383,39 L42.1865383,69" id="Stroke-8" stroke="#4A90E2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

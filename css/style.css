@@ -1,0 +1,245 @@
+body {
+  font-family: sans-serif; }
+
+ul {
+  padding: 0; }
+
+.text-center {
+  text-align: center; }
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+.bold {
+  font-weight: bold; }
+
+.blue {
+  color: #4a90e2; }
+
+.main {
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative; }
+
+.line {
+  height: 1px;
+  background: #4a90e2;
+  width: 0;
+  transition: all .4s; }
+  @media (max-width: 991px) {
+    .line {
+      display: none; } }
+
+.main-page {
+  background-image: url(../images/main_bg.png);
+  background-position: center center;
+  background-size: cover; }
+
+.fassaadid {
+  background-image: url(../images/fassaadid.jpg);
+  background-position: center center;
+  background-size: cover; }
+
+.kontakt {
+  background-image: url(../images/kontakt.jpg);
+  background-position: center center;
+  background-size: cover; }
+
+nav {
+  margin-top: 40px; }
+  nav ul,
+  nav li {
+    display: inline-block; }
+    @media (max-width: 500px) {
+      nav ul,
+      nav li {
+        display: block;
+        text-align: center; } }
+  @media (max-width: 768px) {
+    nav .logo img {
+      width: 100%; } }
+  nav ul.white-nav li a {
+    color: #fff; }
+    nav ul.white-nav li a .circle {
+      border-color: #fff; }
+    nav ul.white-nav li a.active:before {
+      background: #fff; }
+    nav ul.white-nav li a.active .circle {
+      background: #fff !important; }
+  nav ul.white-nav .dropdown {
+    background: rgba(255, 255, 255, 0.5); }
+  nav li.has-dropdown {
+    position: relative; }
+    nav li.has-dropdown:hover .dropdown {
+      display: block; }
+  nav li .dropdown {
+    position: absolute;
+    top: 100%;
+    width: 350px;
+    display: none;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 100; }
+    nav li .dropdown li {
+      display: block; }
+    nav li .dropdown a {
+      padding: 10px 20px; }
+      nav li .dropdown a.active:before {
+        content: none !important; }
+  nav li a {
+    color: #000;
+    font-weight: bold;
+    display: block;
+    padding: 20px;
+    position: relative; }
+    @media (max-width: 991px) {
+      nav li a {
+        padding: 6px; } }
+    nav li a:hover {
+      color: #000;
+      text-decoration: none; }
+      nav li a:hover .circle {
+        background: #4a90e2;
+        border-color: #4a90e2; }
+    nav li a.active:before {
+      content: '';
+      position: absolute;
+      left: 23px;
+      top: -40px;
+      height: 68px;
+      width: 1px;
+      background: #4a90e2; }
+      @media (max-width: 991px) {
+        nav li a.active:before {
+          content: none; } }
+    nav li a.active .circle {
+      background: #4a90e2;
+      border-color: #4a90e2; }
+    nav li a .circle {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: 1px solid silver;
+      background: none;
+      display: inline-block;
+      margin-right: 6px;
+      margin-top: -2px;
+      vertical-align: middle;
+      transition: all .4s; }
+
+.about-us h1 {
+  margin-top: 180px;
+  color: red;
+  transform: translateY(-100px);
+  opacity: 0;
+  animation: fadeIn .8s;
+  animation-fill-mode: forwards; }
+
+.mt-50 {
+  margin-top: 50px; }
+
+.portfolio-cards .card {
+  border-radius: 4px; }
+  .portfolio-cards .card.open .toggle-info {
+    display: block; }
+  .portfolio-cards .card.open .inner {
+    text-align: left !important; }
+    .portfolio-cards .card.open .inner h2, .portfolio-cards .card.open .inner .read-more-btn {
+      visibility: hidden;
+      opacity: 0; }
+  .portfolio-cards .card .inner {
+    padding: 37px 20px;
+    background-size: cover;
+    min-width: 355px;
+    max-width: 355px; }
+    .portfolio-cards .card .inner h2, .portfolio-cards .card .inner .read-more-btn {
+      visibility: visible;
+      opacity: 1;
+      transition: all .4s; }
+    .portfolio-cards .card .inner span {
+      background: #fc4231;
+      color: #fff;
+      padding: 3px 10px;
+      border-radius: 4px;
+      font-size: 11px; }
+    .portfolio-cards .card .inner h2 {
+      font-weight: bold;
+      margin-top: 120px;
+      color: #fff; }
+    .portfolio-cards .card .inner .read-more-btn {
+      display: inline-block;
+      padding: 10px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 4px;
+      color: #fff;
+      margin-top: 15px;
+      transition: all .4s;
+      text-decoration: none;
+      font-weight: bold; }
+      .portfolio-cards .card .inner .read-more-btn:hover {
+        background: #fff;
+        color: #000; }
+    .portfolio-cards .card .inner.balti {
+      background-image: url(../images/baltijaama.png); }
+    .portfolio-cards .card .inner.vanalinn {
+      background-image: url(../images/vanalinn.png); }
+    .portfolio-cards .card .inner.toompea {
+      background-image: url(../images/vanatoompea.png); }
+  .portfolio-cards .card .toggle-info {
+    padding: 24px 50px;
+    background: #fff;
+    display: none;
+    position: relative;
+    max-width: 400px; }
+    .portfolio-cards .card .toggle-info .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer; }
+      .portfolio-cards .card .toggle-info .close-btn img {
+        width: 20px; }
+
+.address {
+  padding: 10px;
+  color: #fff; }
+
+.contact-cards .card {
+  padding: 30px 40px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.8); }
+  .contact-cards .card > img {
+    margin-right: 15px; }
+  .contact-cards .card h3 {
+    margin-bottom: 0; }
+
+.form-inputs form {
+  margin-top: 50px; }
+.form-inputs input, .form-inputs textarea {
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.8); }
+.form-inputs input[type="text"], .form-inputs input[type="email"], .form-inputs textarea {
+  padding: 7px; }
+.form-inputs input[type="text"], .form-inputs input[type="email"] {
+  margin-bottom: 25px; }
+
+.clients-block {
+  padding: 25px;
+  background: #fff;
+  border-radius: 4px; }
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+/*# sourceMappingURL=style.css.map */
