@@ -27,7 +27,7 @@
               <div class="text-center inner toompea">
                 <span>UUS OBJEKT</span>
                 <h2>Vana Toompea<br>restauratsioon</h2>
-                <a href="#" class="read-more-btn">Vaata lähemalt</a>
+                <button class="read-more-btn">Vaata lähemalt</button>
               </div>
             </div>
             <div class="col toggle-info">
@@ -52,11 +52,8 @@
               <div class="text-center inner balti">
                 <span>2017</span>
                 <h2>Vana Toompea<br>restauratsioon</h2>
-                <a href="#" class="read-more-btn">Vaata lähemalt</a>
+                <button class="read-more-btn">Vaata lähemalt</button>
               </div>
-            </div>
-            <div class="col toggle-info">
-              hello
             </div>
           </div>
         </div>
@@ -66,11 +63,8 @@
               <div class="text-center inner vanalinn">
                 <span>2017</span>
                 <h2>Vana Toompea<br>restauratsioon</h2>
-                <a href="#" class="read-more-btn">Vaata lähemalt</a>
+                <button class="read-more-btn">Vaata lähemalt</button>
               </div>
-            </div>
-            <div class="col toggle-info">
-              hello
             </div>
           </div>
         </div>

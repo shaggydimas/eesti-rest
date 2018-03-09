@@ -27,7 +27,8 @@ ul {
 .main {
   min-height: 100vh;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  padding-bottom: 20px; }
 
 .line {
   height: 1px;
@@ -159,6 +160,9 @@ nav {
     background-size: cover;
     min-width: 355px;
     max-width: 355px; }
+    @media (max-width: 700px) {
+      .portfolio-cards .card .inner {
+        min-width: 100%; } }
     .portfolio-cards .card .inner h2, .portfolio-cards .card .inner .read-more-btn {
       visibility: visible;
       opacity: 1;
@@ -175,6 +179,7 @@ nav {
       color: #fff; }
     .portfolio-cards .card .inner .read-more-btn {
       display: inline-block;
+      background: none;
       padding: 10px 16px;
       border: 1px solid rgba(255, 255, 255, 0.5);
       border-radius: 4px;

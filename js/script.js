@@ -16,12 +16,15 @@ $(function(){
     })
     
     $('.read-more-btn').on('click', function(e){
-      e.preventDefault();
       var $this = $(this);
       var parent = $this.closest('.card');
+      if(parent.find('.toggle-info').length === 0) return false;
       $('.card.open').removeClass('open');
       parent.toggleClass('open');
       $owl.trigger('refresh.owl.carousel');
+      $('html, body').animate({
+        scrollTop: $('.card').offset().top - 10
+      })
     })
     
     $('.close-btn').on('click', function(e){

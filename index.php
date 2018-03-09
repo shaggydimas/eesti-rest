@@ -4,6 +4,5 @@
     <div class="container">
       <?php include 'partials/_nav.php'; ?>
     </div>
-  <?php include 'partials/_clients.php'; ?>
 </div>
 <?php include 'footer.php'; ?>

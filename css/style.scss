@@ -34,6 +34,7 @@ ul {
   min-height: 100vh;
   overflow: hidden;
   position: relative;
+  padding-bottom: 20px;
 }
 
 .line {
@@ -231,6 +232,9 @@ nav {
       background-size: cover;
       min-width: 355px;
       max-width: 355px;
+      @media(max-width: 700px) {
+        min-width: 100%;
+      }
       
       h2, .read-more-btn {
         visibility: visible;
@@ -254,6 +258,7 @@ nav {
   
       .read-more-btn {
         display: inline-block;
+        background: none;
         padding: 10px 16px;
         border: 1px solid rgba(255, 255, 255, .5);
         border-radius: 4px;
