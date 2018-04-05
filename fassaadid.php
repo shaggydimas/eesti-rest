@@ -24,8 +24,8 @@
         <div class="card">
           <div class="row no-gutters">
             <div class="col">
-              <div class="text-center inner toompea">
-                <span>UUS OBJEKT</span>
+              <div class="inner toompea">
+                <span>UUS OBJEKT</span><br>
                 <h2>Vana Toompea<br>restauratsioon</h2>
                 <button class="read-more-btn">Vaata lähemalt</button>
               </div>
@@ -34,23 +34,45 @@
               <span class="close-btn">
                 <img src="images/close-btn.png"></img>
               </span>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-              sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-              magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-              quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-              ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-              dolor in hendrerit in vulputate velit esse molestie consequat,
-              vel illum dolore eu feugiat nulla facilisis at vero eros et
-              accumsan et iusto odio dignissim qui blandit praesent luptatum
-              zzril delen
+              <div class="box-info">
+                <p class="card-header">Vana Toompea Restauratsioon</p>
+                <div class="rating">
+                  <small>Objekti raskus</small>
+                  <div class="icons">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                  </div>
+                </div>
+                <div class="object-info">
+                  <div class="row-grow">
+                    <span>Objekti suurus:</span>
+                    <span>400 m2</span>
+                  </div>
+                  <div class="row-grow">
+                    <span>Töö kestvus:</span>
+                    <span>4 kuud</span>
+                  </div>
+                  <div class="row-grow">
+                    <span>Objekti valmimis aasta:</span>
+                    <span>1830</span>
+                  </div>
+                  <div class="row-grow">
+                    <span>Töölisi objektil:</span>
+                    <span>8</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="card">
           <div class="row no-gutters">
             <div class="col">
-              <div class="text-center inner balti">
-                <span>2017</span>
+              <div class="inner balti">
+                <span>2017</span><br>
                 <h2>Vana Toompea<br>restauratsioon</h2>
                 <button class="read-more-btn">Vaata lähemalt</button>
               </div>
@@ -60,8 +82,8 @@
         <div class="card">
           <div class="row no-gutters">
             <div class="col">
-              <div class="text-center inner vanalinn">
-                <span>2017</span>
+              <div class="inner vanalinn">
+                <span>2017</span><br>
                 <h2>Vana Toompea<br>restauratsioon</h2>
                 <button class="read-more-btn">Vaata lähemalt</button>
               </div>

@@ -64,9 +64,17 @@ nav {
       nav li {
         display: block;
         text-align: center; } }
-  @media (max-width: 768px) {
+    @media (max-width: 768px) {
+      nav ul a,
+      nav li a {
+        font-size: 12px !important; } }
+  nav .logo {
+    text-align: center; }
     nav .logo img {
-      width: 100%; } }
+      max-width: 266px; }
+      @media (max-width: 768px) {
+        nav .logo img {
+          width: 100%; } }
   nav ul.white-nav li a {
     color: #fff; }
     nav ul.white-nav li a .circle {
@@ -88,6 +96,11 @@ nav {
     display: none;
     background: rgba(255, 255, 255, 0.9);
     z-index: 100; }
+    @media (max-width: 991px) {
+      nav li .dropdown {
+        background: white !important; }
+        nav li .dropdown li a {
+          color: black !important; } }
     nav li .dropdown li {
       display: block; }
     nav li .dropdown a {
@@ -150,12 +163,14 @@ nav {
   border-radius: 4px; }
   .portfolio-cards .card.open .toggle-info {
     display: block; }
-  .portfolio-cards .card.open .inner {
-    text-align: left !important; }
-    .portfolio-cards .card.open .inner h2, .portfolio-cards .card.open .inner .read-more-btn {
-      visibility: hidden;
-      opacity: 0; }
+  .portfolio-cards .card.open .inner h2, .portfolio-cards .card.open .inner span, .portfolio-cards .card.open .inner button {
+    left: 0%;
+    transform: translateX(0); }
+  .portfolio-cards .card.open .inner .read-more-btn {
+    background: #fff;
+    color: #000; }
   .portfolio-cards .card .inner {
+    position: relative;
     padding: 37px 20px;
     background-size: cover;
     min-width: 355px;
@@ -167,6 +182,12 @@ nav {
       visibility: visible;
       opacity: 1;
       transition: all .4s; }
+    .portfolio-cards .card .inner span, .portfolio-cards .card .inner h2, .portfolio-cards .card .inner button {
+      position: relative;
+      transition: all .4s;
+      left: 50%;
+      transform: translateX(-50%);
+      display: inline-block; }
     .portfolio-cards .card .inner span {
       background: #fc4231;
       color: #fff;
@@ -187,7 +208,8 @@ nav {
       margin-top: 15px;
       transition: all .4s;
       text-decoration: none;
-      font-weight: bold; }
+      font-weight: bold;
+      outline: none; }
       .portfolio-cards .card .inner .read-more-btn:hover {
         background: #fff;
         color: #000; }
@@ -203,6 +225,10 @@ nav {
     display: none;
     position: relative;
     max-width: 400px; }
+    .portfolio-cards .card .toggle-info .box-info .card-header {
+      font-size: 16px;
+      font-weight: bold;
+      color: #666; }
     .portfolio-cards .card .toggle-info .close-btn {
       position: absolute;
       top: 20px;
@@ -215,12 +241,15 @@ nav {
   padding: 10px;
   color: #fff; }
 
+@media (max-width: 767px) {
+  .contact-cards > .col:nth-child(n + 2) .card {
+    margin-top: 20px !important; } }
 .contact-cards .card {
   padding: 30px 40px;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.8); }
-  .contact-cards .card > img {
-    margin-right: 15px; }
+  .contact-cards .card img {
+    width: 100%; }
   .contact-cards .card h3 {
     margin-bottom: 0; }
 
@@ -241,6 +270,27 @@ nav {
   padding: 25px;
   background: #fff;
   border-radius: 4px; }
+
+.rating small {
+  font-size: 12px;
+  color: #888;
+  margin-left: 5px; }
+.rating .icons {
+  display: inline-block;
+  color: #4a90e2;
+  font-size: 18px; }
+
+.object-info {
+  margin-top: 50px; }
+  .object-info .row-grow {
+    display: flex; }
+    .object-info .row-grow:nth-child(n + 2) {
+      margin-top: 10px; }
+    .object-info .row-grow span {
+      font-size: 13px; }
+      .object-info .row-grow span:first-child {
+        color: #888;
+        flex-grow: 1; }
 
 @keyframes fadeIn {
   100% {
