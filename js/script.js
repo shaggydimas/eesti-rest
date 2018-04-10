@@ -40,4 +40,8 @@ $(function(){
       var offset = $('nav .active').offset().left + 24;
       $('.line').css('width', offset);
     })
+    
+    $('.gallery').modaal({
+      type: 'image'
+    });
 })

@@ -161,6 +161,8 @@ nav {
 
 .portfolio-cards .card {
   border-radius: 4px; }
+  .portfolio-cards .card.open .open-gallery {
+    display: block; }
   .portfolio-cards .card.open .toggle-info {
     display: block; }
   .portfolio-cards .card.open .inner h2, .portfolio-cards .card.open .inner span, .portfolio-cards .card.open .inner button {
@@ -169,6 +171,14 @@ nav {
   .portfolio-cards .card.open .inner .read-more-btn {
     background: #fff;
     color: #000; }
+  .portfolio-cards .card .open-gallery {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #4a90e2;
+    display: none;
+    font-size: 2em;
+    cursor: pointer; }
   .portfolio-cards .card .inner {
     position: relative;
     padding: 37px 20px;
@@ -291,6 +301,9 @@ nav {
       .object-info .row-grow span:first-child {
         color: #888;
         flex-grow: 1; }
+
+.gallery.dn {
+  display: none; }
 
 @keyframes fadeIn {
   100% {

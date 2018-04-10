@@ -25,6 +25,14 @@
           <div class="row no-gutters">
             <div class="col">
               <div class="inner toompea">
+                <div class="open-gallery">
+                  <a href="/images/vanatoompea.png" rel="gallery" class="gallery">
+                    <i class="fas fa-search-plus"></i>
+                  </a>
+                  <a href="/images/baltijaama.png" rel="gallery" class="gallery dn"></a>
+                  <a href="/images/vanalinn.png" rel="gallery" class="gallery dn"></a>
+                  <a href="/images/max.jpg" rel="gallery" class="gallery dn"></a>
+                </div>
                 <span>UUS OBJEKT</span><br>
                 <h2>Vana Toompea<br>restauratsioon</h2>
                 <button class="read-more-btn">Vaata lähemalt</button>

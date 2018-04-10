@@ -1,3 +1,6 @@
+<?php
+$uri = explode('/', $_SERVER['REQUEST_URI'])[1];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +11,11 @@
   <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css" />
   <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
   <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <?php
+  if($uri === 'fassaadid'){
+  ?>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.3.1/dist/css/modaal.min.css" type="text/css" />
+  <?php } ?>
   <title>Eesti rest</title>
 </head>
 <body>
